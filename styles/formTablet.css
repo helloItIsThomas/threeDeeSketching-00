@@ -1,0 +1,30 @@
+@media (min-width: 601px) {
+  #mailForm {
+    margin: 20px;
+  }
+
+  #closeButton {
+    width: 200px;
+    /* height: 50px; */
+  }
+
+  #formHeadline {
+    padding-top: clamp(20px, 8vh, 90px);
+    padding-bottom: clamp(20px, 8vh, 90px);
+    font-size: clamp(20px, 5vh, 38px);
+  }
+
+  #copyright {
+    font-size: 16px;
+  }
+
+  #formFields input {
+    /* height: 70px; */
+    /* padding-top: 10px; */
+    /* border-radius: 1000px; */
+  }
+
+  #formFields textarea {
+    padding-top: 20px;
+  }
+}

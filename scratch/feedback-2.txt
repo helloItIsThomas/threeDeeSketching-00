@@ -1,0 +1,20 @@
+
+MOBILE:
+– button transitions aren’t as successful on mobile, I guess to do with the spacing and positioning of the X button and the edge of the box.
+
+Figure out how to get rid of the purple thing in the background that shows up on mobile sometimes.
+
+
+– [DESKTOP] Apologies, the form/button sizing is pretty large isn’t it! I feel like everything needs to be about
+65-70% smaller. E.g. the width of the form, the size of all the buttons and text and text fields etc.
+I’ve judged that by simply zooming out in my browser (screen shot attached).
+– Swapping STUDIO and PUZZLE on the edges?
+
+
+
+Please make sure that the Contact button will never be cropped off in the corner.
+Also make sure the height is always 100% high.
+Also make sure that we can resize the screen and have it adjust.
+It should listen for the breakpoints during screen resizing {
+    
+}

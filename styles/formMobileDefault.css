@@ -1,0 +1,269 @@
+@font-face {
+  font-family: "diaBold";
+  src: url("/bold.woff") format("woff");
+}
+@font-face {
+  font-family: "diaMed";
+  src: url("/med.woff") format("woff");
+}
+
+* {
+  font-family: "diaMed", sans-serif;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #0b98d7;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: radial-gradient(#0b98d7, #7cdafb);
+}
+
+a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#myCanvas {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  z-index: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+#mailForm::-webkit-scrollbar {
+  display: none;
+}
+
+#mailForm * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#myForm {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CLOSE HERE YO */
+#mailForm {
+  margin: 0;
+  background-color: transparent;
+
+  box-sizing: border-box;
+  pointer-events: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  z-index: 10;
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  font-size: 100%;
+
+  min-height: 80px;
+  padding: 20px;
+  width: calc(100% - 40px);
+  height: 10%;
+}
+
+form {
+  padding: 0;
+  margin: 0;
+}
+
+#formTop {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  flex-shrink: 0;
+}
+#formHeader {
+  position: relative;
+  /* padding-bottom: 50px; */
+  opacity: 1;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+}
+#formBottom {
+  box-sizing: border-box;
+  flex-grow: 1;
+  padding: 0;
+  margin: 0;
+}
+
+/* CLOSE HERE YO */
+#closeButton {
+  overflow: hidden;
+  width: 180px;
+  height: 40px;
+  left: 0px;
+
+  border-radius: 1000000000px;
+  pointer-events: all;
+  z-index: 1;
+  box-sizing: border-box;
+  font-size: 22px;
+  box-sizing: border-box;
+  border: none;
+  margin-top: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+  background-color: black;
+}
+
+#closeButton:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: #7cdafb;
+  transition: all 0.2s ease-in-out;
+}
+
+#formTop ul {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+
+  /* font-size: 100%; */
+  padding: none;
+  margin: none;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+#formTop li {
+  height: 100%;
+  text-align: right;
+  /* font-size: clamp(0.5rem, 1vw, 1rem); */
+  list-style-type: none;
+}
+
+#formHeadline {
+  padding-top: clamp(20px, 6vh, 50px);
+  padding-bottom: clamp(20px, 6vh, 50px);
+  font-size: clamp(20px, 6vh, 45px);
+  line-height: 0.95;
+  /* font-size: clamp(25px, 6vh, 45px); */
+  text-align: center;
+  font-family: "diaBold", sans-serif;
+}
+
+#formFields {
+  box-sizing: border-box;
+  gap: 5px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex-grow: 1;
+}
+
+#formFields input {
+  width: 100%;
+  height: 50px;
+  border: none;
+  box-sizing: border-box;
+  margin-bottom: 3px;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  border-radius: 1000px;
+  background: rgba(255, 255, 255, 0.8);
+  font-size: 20px;
+}
+
+#formFields textarea {
+  box-sizing: border-box;
+  border: none;
+  width: 100%;
+  flex-grow: 1;
+  /* height: 100%; */
+  resize: none;
+  margin-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  border-radius: 25px;
+  font-size: 20px;
+
+  background: rgba(255, 255, 255, 0.8);
+}
+
+#sendButton {
+  width: 100%;
+  height: 40px;
+  font-size: 20px;
+  box-sizing: border-box;
+  border: none;
+  margin-top: 5px;
+  padding-top: 7px;
+  padding-bottom: 10px;
+  color: white;
+  background-color: black;
+  border-radius: 1000000000px;
+}
+
+#sendButton:hover {
+  color: black;
+  color: #7cdafb;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* CLOSE HERE YO */
+#socialsGroup {
+  display: none;
+  opacity: 0;
+
+  font-family: serif;
+  z-index: 0;
+}
+
+#copyright {
+  font-size: 12px;
+  user-select: none;
+  pointer-events: none;
+}
+
+footer {
+  position: absolute;
+  z-index: 0;
+  bottom: 10px;
+  left: 20px;
+}
+
+#insta,
+#linkedin {
+  font-size: 14px;
+}

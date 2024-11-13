@@ -1,0 +1,11 @@
+
+
+On desktop the messages field could be a bit smaller and the space allocated to the padding before and after the Customer Services. Maybe taking off 10 - 15 % of the text message box.
+if we can make it look like 80% zoom on chrome.
+
+
+/**
+ASCII TOOL
+Fix the color blue for the ascii tool.
+The other thing is when downloading video, when you play the video back, it's very jittery.
+**/

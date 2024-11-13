@@ -1,0 +1,17 @@
+
+
+– Plug in Dom's serviceID
+— Deploy on Dom's GitHub
+
+– Swap PUZZLE and STUDIO on the outer top and bottom sides.
+
+vite v5.4.9 building for production...
+
+node_modules/three/examples/jsm/libs/lottie_canvas.module.js (13973:30):
+    Use of eval in "node_modules/three/examples/jsm/libs/lottie_canvas.module.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+
+node_modules/three/examples/jsm/libs/chevrotain.module.min.js (2:7044):
+    Use of eval in "node_modules/three/examples/jsm/libs/chevrotain.module.min.js" is strongly discouraged as it poses security risks and may cause issues with minification.
+
+scripts/scene.js (78:35):
+    "sRGBEncoding" is not exported by "node_modules/three/build/three.module.js", imported by "scripts/scene.js".
